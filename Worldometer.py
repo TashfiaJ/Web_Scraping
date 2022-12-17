@@ -16,7 +16,8 @@ for row in rows:
     dic = {}
     dic['Country'] = row.find_all('td')[1].text
     dic['Population (2020)'] = row.find_all('td')[2].text
-    dic['Yearly Change'] = row.find_all('td')[3].text
+    dic['Land Area(km*km)'] = row.find_all('td')[6].text
+    dic['World Share'] = row.find_all('td')[11].text
     countries_list.append(dic)
 
 df = pd.DataFrame(countries_list)
