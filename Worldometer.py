@@ -23,3 +23,9 @@ for row in rows:
 df = pd.DataFrame(countries_list)
 df.to_csv('Countries_data.csv', index=False)
 df.to_excel('Countries_data.xlsx', index=False)
+
+
+
+
+
+
